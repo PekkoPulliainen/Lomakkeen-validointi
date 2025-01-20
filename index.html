@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rekisteröitymislomake</title>
+    <link href="/style.css" rel="stylesheet" />
+    <script src="./index.js"></script>
+    <h1 class="ms-5 mt-5">Rekisteröitymislomake</h1>
+  </head>
+  <body>
+    <p class="ms-5 fs-5">Siirry kentästä toiseen tab-näppäimellä.</p>
+    <div>
+      <form action="" id="loginForm">
+        <div class="row">
+          <label for="ID" class="column-text">Käyttäjä ID:</label>
+          <input type="text" id="ID" name="ID" class="column-input" />
+          <label class="virhe" id="id-virhe"></label>
+        </div>
+        <div class="row">
+          <label for="salasana" class="column-text">Salasana:</label>
+          <input
+            type="text"
+            id="salasana"
+            name="salasana"
+            class="column-input"
+          />
+          <label class="virhe" id="salasana-virhe"></label>
+        </div>
+        <div class="row">
+          <label for="nimi" class="column-text">Nimi:</label>
+          <input type="text" id="nimi" name="nimi" class="column-input2" />
+          <label class="virhe" id="nimi-virhe"></label>
+        </div>
+        <div class="row">
+          <label for="osoite" class="column-text">Osoite:</label>
+          <input type="text" id="osoite" name="osoite" class="column-input2" />
+          <label class="virhe" id="osoite-virhe"></label>
+        </div>
+        <div class="row">
+          <label for="maa" class="column-text">Maa:</label>
+          <select class="maa" id="maa">
+            <option value="maa">(Valitse maa)</option>
+            <option value="albania">Albania</option>
+            <option value="andorra">Andorra</option>
+            <option value="armenia">Armenia</option>
+            <option value="austria">Itävalta</option>
+            <option value="azerbaijan">Azerbaidžan</option>
+            <option value="belgium">Belgia</option>
+            <option value="bosnia">Bosnia ja Hertsegovina</option>
+            <option value="bulgaria">Bulgaria</option>
+            <option value="croatia">Kroatia</option>
+            <option value="cyprus">Kypros</option>
+            <option value="czech_republic">Tšekki</option>
+            <option value="denmark">Tanska</option>
+            <option value="estonia">Viro</option>
+            <option value="finland">Suomi</option>
+            <option value="france">Ranska</option>
+            <option value="georgia">Georgia</option>
+            <option value="germany">Saksa</option>
+            <option value="greece">Kreikka</option>
+            <option value="hungary">Unkari</option>
+            <option value="iceland">Islanti</option>
+            <option value="ireland">Irlanti</option>
+            <option value="italy">Italia</option>
+            <option value="kazakhstan">Kazakhstan</option>
+            <option value="kosovo">Kosovo</option>
+            <option value="latvia">Latvia</option>
+            <option value="liechtenstein">Liechtenstein</option>
+            <option value="lithuania">Liettua</option>
+            <option value="luxembourg">Luxemburg</option>
+            <option value="malta">Malta</option>
+            <option value="moldova">Moldova</option>
+            <option value="monaco">Monaco</option>
+            <option value="montenegro">Montenegro</option>
+            <option value="netherlands">Alankomaat</option>
+            <option value="north_macedonia">Pohjois-Makedonia</option>
+            <option value="norway">Norja</option>
+            <option value="poland">Puola</option>
+            <option value="portugal">Portugali</option>
+            <option value="romania">Romania</option>
+            <option value="russia">Venäjä</option>
+            <option value="san_marino">San Marino</option>
+            <option value="serbia">Serbia</option>
+            <option value="slovakia">Slovakia</option>
+            <option value="slovenia">Slovenia</option>
+            <option value="spain">Espanja</option>
+            <option value="sweden">Ruotsi</option>
+            <option value="switzerland">Sveitsi</option>
+            <option value="ukraine">Ukraina</option>
+            <option value="united_kingdom">Yhdistynyt kuningaskunta</option>
+            <option value="vatican_city">Vatikaani</option>
+          </select>
+          <label class="virhe" id="maa-virhe"></label>
+        </div>
+        <div class="row">
+          <label for="postinumero" class="column-text">Postinumero:</label>
+          <input
+            type="number"
+            id="postinumero"
+            name="postinumero"
+            class="column-input3"
+          />
+          <label class="virhe" id="postinumero-virhe"></label>
+        </div>
+        <div class="row">
+          <label for="sahkoposti" class="column-text">Sähköposti:</label>
+          <input
+            type="text"
+            id="sahkoposti"
+            name="sähköposti"
+            class="column-input2"
+          />
+          <label class="virhe" id="sahkoposti-virhe"></label>
+        </div>
+        <div class="row">
+          <label for="sukupuoli" class="column-text">Sukupuoli:</label>
+          <input
+            type="radio"
+            id="sukupuoli"
+            name="sukupuoli"
+            value="mies"
+            checked
+          />
+          <label for="sukupuoli" class="">Mies</label>
+          <input type="radio" id="sukupuoli" name="sukupuoli" value="nainen" />
+          <label for="sukupuoli" class="">Nainen</label>
+          <label class="virhe" id="sukupuoli-virhe"></label>
+        </div>
+        <div class="row">
+          <label for="kieli" class="column-text">Kieli:</label>
+          <input type="checkbox" name="kieli" value="kieli" id="suomi" />
+          <label for="kieli" class="">Suomi</label>
+          <input type="checkbox" name="kieli" value="kieli" id="muukuinsuomi" />
+          <label for="kieli" class="">Muu kuin suomi</label>
+          <label class="virhe" id="kieli-virhe"></label>
+        </div>
+        <div class="row">
+          <label for="lisätiedot" class="column-text">Lisätietoja:</label>
+          <textarea
+            placeholder="Vapaaehtoinen"
+            id="lisatiedot"
+            rows="5"
+            cols="35"
+          ></textarea>
+        </div>
+        <button type="submit" id="submit">Lähetä</button>
+      </form>
+    </div>
+  </body>
+</html>
