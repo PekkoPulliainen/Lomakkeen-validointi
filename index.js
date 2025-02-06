@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", (_event) => {
       let onkoNumero = false;
       let onkoErikoisMerkki = false;
       for (const merkki of salasana) {
-        if (/!@£$€&%#/.test(merkki)) {
+        if (/[!@£$€&%#]/.test(merkki)) {
           onkoErikoisMerkki = true;
         }
         if (/[A-Z]/.test(merkki)) {
